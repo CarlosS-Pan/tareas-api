@@ -1,0 +1,35 @@
+
+#######
+
+POST http://localhost:3001/tareas HTTP/1.1
+content-type: application/json
+
+{
+    "id": 7,
+    "nombre": "Carlos Sanabria",
+    "puntos": 2, 
+    "materia": "Objetos",
+    "fechaEntrega": "2022-03-26"
+}
+
+#######
+
+GET http://localhost:3001/tareas HTTP/1.1
+content-type: application/json
+
+#######
+PUT http://localhost:3001/tareas/627166f14c756455a6a4bc26 HTTP/1.1
+content-type: application/json
+
+{
+    "id": 7,
+    "nombre": "Tony Cash",
+    "puntos": 8, 
+    "materia": "Clase",
+    "fechaEntrega": "2022-03-26"
+}
+
+#######
+
+DELETE http://localhost:3001/tareas/6243b66e023615ca71e6d43f HTTP/1.1
+content-type: application/json
